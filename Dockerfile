@@ -12,10 +12,7 @@ RUN npm install
 
 # Copy the rest of the application files
 COPY . .
-
-# Build the React app (assuming React app is in a "client" folder)
-WORKDIR /app/client
-RUN npm install
+# build for react 
 RUN npm run build
 
 # Switch back to the root directory
